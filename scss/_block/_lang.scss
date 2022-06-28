@@ -1,0 +1,38 @@
+.lang {
+    margin-top: 125px;
+    &__subtitle {
+        text-align: center;
+        position: relative;
+        @include beforCircle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-top: 6px;
+    }
+    &__items {
+        display: grid;
+        grid-template-rows: 100px 30px 100px;
+        grid-auto-rows: 100px auto;
+        align-items: center;
+    }
+    &__item {
+
+        &-container {
+            display: grid;
+            grid-template-columns: repeat(5, 220px);
+            justify-items: center;
+            gap: 10px;
+            text-align: center;
+        }
+    }
+    &-divider {
+        border: 1px $main-color solid;
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+}
